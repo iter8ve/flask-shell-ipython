@@ -5,12 +5,12 @@ setup(
     author_email="andrew@ei-grad.ru",
     description="Replace default `flask shell` command by similar command running IPython.",
     url="http://github.com/ei-grad/flask-shell-ipython",
-    version="0.1.1",
+    version="0.1.2",
     py_modules=['flask_shell_ipython'],
     install_requires=[
         'flask>=0.11',
         'click',
-        'IPython',
+        'IPython<5.0.0',
     ],
     entry_points={
         'flask.commands': [
